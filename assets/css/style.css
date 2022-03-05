@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* dùng chung */
+.p-d-16 {
+    padding: 0 16px;
+}
+
+.p-d-8 {
+    padding: 0 8px;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* nav bên phải  */
+#nav {
+    width: 300px;
+    position: fixed;
+}
+
+#nav .nav-heading {
+}
+
+#nav .nav-photo {
+    width: 45%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#nav .nav-header {
+    margin: 10px 0;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+#nav .nav-sub-header {
+    margin: 15px 0;
+    color: #757575;
+}
+
+#nav .nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav .nav-menu a:hover {
+    background-color: #ccc;
+}
+
+
+#nav .nav-menu-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+
+#nav .nav-menu-item:first-child {
+    color: #009688;
+}
+
+#nav .nav-icon {
+    margin: 16px 0;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+#nav .nav-icon a{
+    text-decoration: none;
+    padding-right: 16px;
+    color: #000;
+}
+
+#nav .nav-icon a:hover{
+    opacity: 0.6;
+}
+
+/* main nôi dung chính */
+#main {
+    background-color: #f1f1f1;
+}
+
+/* main-header */
+#header {
+
+}
+
+#header .header-heading {
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 550;
+}
+
+#header .sub-heading {
+    display: flex;
+    margin: 16px 0;
+    padding: 16px 0;
+    border-bottom: #ccc solid 6px;
+}
+
+#header .sub-heading a {
+    text-decoration: none;
+    color: #000;
+}
+
+#header > .sub-heading > a {
+    line-height: 38.5px;
+}
+
+
+#header .header-section {
+    display: flex;
+    margin-left: 16px;
+}
+
+#header .header-section a {
+    padding: 6px 16px;
+    background-color: #fff;
+    border: 2px solid #f1f1f1;
+}
+
+#header .header-section a:hover {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) ;
+}
+
+#header .header-section a:first-child {
+    color: #fff;
+    background-color: #000;
+}
+
+#header .header-section i {
+    margin-right: 8px;
+}
+
+/* Content main */
+#content {
+    display: flex; 
+    flex-direction: column;
+}
+
+#content .content-main {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#content .content-place {
+    display: flex;
+    flex-direction: column;
+    width: 33.33333%;
+    margin-bottom: 16px;
+}
+
+#content .content-photo {
+    width: 100%;
+}
+
+#content .content-photo:hover {
+    opacity: 0.6;
+}
+
+#content .content-about {
+    background-color: #fff;
+}
+
+#content .content-heading {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+#content .content-text {
+    margin: 15px 0;
+}
+
+#content .content-footer{
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#content .content-footer a{
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+}
+
+#content .content-footer a:first-child,
+#content .content-footer a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#content .content-footer .next-icon {
+    font-size: 8px;
+}
+
+/* footer main */
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 32px 24px;
+}
+
+#footer .footer-content {
+    width: 33.33333%;
+}
+
+#footer .footer-content-heading {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+#footer .footer-content-text {
+    margin: 15px 0;
+
+}
+
+#footer .footer-content-copyright a {
+    color: #000;
+}
+
+
+#footer .footer-port-list {
+    display: flex;
+    padding: 16px 2px 16px 16px;
+}
+
+#footer .footer-port-list:hover {
+    background-color: #ccc;
+}
+
+#footer .border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+#footer .footer-port-photo {
+    width: 50px;
+    margin-right: 16px;
+}
+
+#footer .footer-port-about {
+    line-height: 25px
+}
+
+#footer .footer-port-heading {
+    font-size: 18px;
+}
+
+#footer .footer-port-text {
+
+}
+
+#footer .footer-more-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: flex-end;
+    margin: 15px 0;
+}
+
+#footer .footer-more-list p {
+    padding: 0 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #616161;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+#footer .footer-more-list li:first-child p {
+    background-color: #000;
+    font-size: 15px;
+}
+
+
+
